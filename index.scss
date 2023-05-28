@@ -1,0 +1,144 @@
+$lpheader: 'Roboto Mono', monospace;
+$bg-color: rgb(31, 106,59);
+
+@mixin blob { 
+    border-radius: 40% 60% 60% 40% / 70% 30% 70% 30%;
+    position: fixed;
+    z-index: -999;
+    width: 500px;
+    height: 500px;
+    background-color: rgba(255,255,255,0.07);
+    // box-shadow: -50vmin 25vmin 0 rgba(255,255,255,0.07);
+    animation: animateBlob 20s linear infinite alternate;
+    // floatblob 20s linear infinite alternate;
+}
+
+body {
+    background-color: rgb(31, 106,59) !important;
+}
+
+.custom-toggler.navbar-toggler {
+    border-color: rgb(47, 79, 79,);
+    color: rgb(47, 79, 79,);
+    background-color: rgb(47, 79, 79,);
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+
+.navbar {
+    background-color: rgb(31, 106, 59,);
+}
+
+.nav-link {
+    color: rgba(255,255,255,) !important;
+}
+
+.bcontact {
+    background-color: rgb(47, 79, 79,) !important;
+}
+
+.bcontact:hover {
+    color: black !important;
+}
+
+.container {
+    text-align: center;
+}
+
+.cnoah {
+    padding-top: 15rem;
+    font-weight: 500;
+    font-family: $lpheader;
+}
+
+.fengineer {
+    font-style: italic;
+    font-family: $lpheader;
+}
+
+.fquote {
+    font-size: small;
+    font-family: $lpheader;
+    font-style: italic;
+    font-weight: 100;
+}
+
+.fquote,
+.cnoah,
+.feng {
+    color: rgba(255,255,255);
+}
+
+.name {
+    font-size: 100px;
+}
+
+.feng {
+    font-size: 50px;
+}
+
+.fquote {
+    font-size: 25px;
+}
+
+// start blobs
+
+.blob1 {
+    @include blob;
+    margin-left: 25rem;
+    margin-top: -20rem;
+}
+
+
+// @keyframes floatblob {
+//     0% { transform: translate(0, 0px); }
+//     50% { transform: translate(100px, 200px); }
+//     100% { transform: translate(0, -0px); }
+// }
+
+@keyframes animateBlob {
+    0% {
+        border-radius: 40% 60% 60% 40% / 70% 30% 70% 30%;
+      }
+      25% {
+        border-radius: 40% 60%;
+      }
+      50% {
+        border-radius: 50% 70% 70% 30% / 75% 20% 75% 20%;
+      }
+      75% {
+        border-radius: 33% 77%;
+      }
+      100% {
+        border-radius: 40% 60% 60% 40% / 70% 30% 70% 30%;
+      }
+}
+
+// end blobs
+
+@media (max-width: 767px) {
+    .cnoah {
+      padding-top: 7rem;
+      font-family: $lpheader;
+    }
+    .name {
+        font-size: 60px;
+    }
+    .feng {
+        font-size: 30px;
+    }
+    .fquote {
+        font-size: 15px;
+  }
+    .blob1 {
+        margin-left: 3rem;
+        margin-top: -15rem;
+    }
+}
+

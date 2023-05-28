@@ -1,0 +1,48 @@
+body {
+  background-color: rgb(255, 255, 255);
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(31, 106, 59);
+}
+
+.container {
+  margin-bottom: 2rem;
+}
+
+h2 {
+  text-decoration-line: underline;
+  text-underline-position: under;
+  font-family: "Roboto Mono", monospace;
+}
+
+p {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 300;
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: rgb(47, 79, 79);
+  color: rgb(47, 79, 79);
+  background-color: rgb(47, 79, 79);
+}
+
+.navbar {
+  background-color: rgb(31, 106, 59);
+}
+
+.nav-link {
+  color: rgb(255, 255, 255) !important;
+}
+
+.bcontact {
+  background-color: rgb(47, 79, 79) !important;
+}
+
+.bcontact:hover {
+  color: black !important;
+}/*# sourceMappingURL=about.css.map */
