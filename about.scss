@@ -6,14 +6,37 @@ body {
     background-color: rgb(255,255,255,);
 }
 
+.plifepic {
+    max-height: 90rem;
+}
 
 .footer {
-    position: fixed;
+    position: relative;
     left: 0;
     bottom: 0;
     width: 100%;
     background-color: $bg-color;
 }
+
+.item {
+    opacity: 1;
+    transition: opacity 0.5s, transform 0.5s;
+  }
+
+.item > p {
+    text-align: center;
+}
+
+.left {
+    transform-origin: left center;
+    transform: translateX(50%);
+}
+
+.slidein {
+    opacity: 1;
+    transform: translateX(0);
+}
+  
 
 .container {
     margin-bottom: 2rem;
